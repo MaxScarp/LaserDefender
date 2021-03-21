@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8550918666524743957}
   - component: {fileID: 308935078924641629}
+  - component: {fileID: -6733428590467932492}
   m_Layer: 0
   m_Name: EnemyMosquito
   m_TagString: Untagged
@@ -82,3 +83,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6733428590467932492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6500224153965895171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4f0ad0d3d4db442a674fdb75700201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
