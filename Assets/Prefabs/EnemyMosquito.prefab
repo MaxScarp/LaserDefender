@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6733428590467932492}
   - component: {fileID: 6193048579129384657}
   - component: {fileID: 8958854828719273248}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyMosquito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3f7d792d3291e42b30e5d81aec7f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 8042007380584733446, guid: 41246729545772f4da1018abff30f575, type: 3}
   health: 100
+  minShootingRate: 0.3
+  maxShootingRate: 3
+  laserSpeed: 7
 --- !u!60 &8958854828719273248
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3772347181820099624}
   - component: {fileID: 816940519364096977}
-  m_Layer: 0
+  - component: {fileID: 6979864632887224605}
+  m_Layer: 7
   m_Name: EnemyTank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,3 +83,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6979864632887224605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674967166151864063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3f7d792d3291e42b30e5d81aec7f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 2623637641935787765, guid: b7b6c4e371e80b44f99a555c2f2ce5e7, type: 3}
+  health: 300
+  minShootingRate: 0.3
+  maxShootingRate: 3
+  laserSpeed: 4
