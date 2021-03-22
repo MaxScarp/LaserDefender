@@ -1,14 +1,13 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [Header("Player")]
+    //Configuration parameters
     [SerializeField] float moveSpeed = 7f;
     [SerializeField] float padding = 0.5f;
-    [SerializeField] int health = 500;
-
-    [Header("Laser")]
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileFiringPeriod = 0.5f;
@@ -31,29 +30,13 @@ public class Player : MonoBehaviour
         Fire();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        DamageDealer damageDealer = collision.gameObject.GetComponent<DamageDealer>();
-        ProcessHit(damageDealer);
-    }
-
-    private void ProcessHit(DamageDealer damageDealer)
-    {
-        health -= damageDealer.GetDamage();
-        damageDealer.Hit();
-        if(health <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
-
     private void Fire()
     {
         if (Input.GetButtonDown("Fire1"))
         {
             firingCoroutine = StartCoroutine(FireContinuously());
         }
-        if (Input.GetButtonUp("Fire1"))
+        if(Input.GetButtonUp("Fire1"))
         {
             StopCoroutine(firingCoroutine);
         }
@@ -80,6 +63,10 @@ public class Player : MonoBehaviour
         float playerPosY = transform.position.y + movement.y;
 
         transform.position = new Vector2(Mathf.Clamp(playerPosX, xMin, xMax), Mathf.Clamp(playerPosY, yMin, yMax));
+
+        //transform.position = (Vector2)transform.position + movement;
+        //transform.position = new Vector2(Mathf.Clamp(transform.position.x + movement.x, xMin, xMax), Mathf.Clamp(transform.position.y + movement.y, yMin, yMax));
+        //Debug.Log(transform.position.x + " " + transform.position.y);
     }
 
     private void SetUpMoveBoundaries()

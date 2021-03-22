@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5040029810094458307}
   - component: {fileID: 3236378373047529277}
   - component: {fileID: -7892039760977700087}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,8 +159,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3f7d792d3291e42b30e5d81aec7f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 3079308892832088439, guid: 9f886992b4c01894d996cc7451b5721e, type: 3}
   health: 300
-  minShootingRate: 0.3
-  maxShootingRate: 5
-  laserSpeed: 5
