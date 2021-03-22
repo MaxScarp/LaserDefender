@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float minShootingRate = 0.3f;
     [SerializeField] float maxShootingRate = 3f;
     [SerializeField] float laserSpeed = 5f;
+    [SerializeField] GameObject explosionVFX;
 
     float shotCounter;
 
@@ -49,7 +50,14 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        GameObject explosionVFXClone = Instantiate(explosionVFX, transform.position, Quaternion.identity) as GameObject;
+        Destroy(explosionVFXClone, 0.25f);
     }
 }

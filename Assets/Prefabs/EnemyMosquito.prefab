@@ -114,6 +114,7 @@ MonoBehaviour:
   minShootingRate: 0.3
   maxShootingRate: 3
   laserSpeed: 7
+  explosionVFX: {fileID: 8705540985693937992, guid: b44774d137493794dbed54ba1009023f, type: 3}
 --- !u!60 &8958854828719273248
 PolygonCollider2D:
   m_ObjectHideFlags: 0

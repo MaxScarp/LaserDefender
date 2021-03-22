@@ -164,3 +164,4 @@ MonoBehaviour:
   minShootingRate: 0.3
   maxShootingRate: 5
   laserSpeed: 5
+  explosionVFX: {fileID: 8705540985693937992, guid: b44774d137493794dbed54ba1009023f, type: 3}
