@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5838118867330488713}
   - component: {fileID: 2222826883733696243}
-  m_Layer: 0
+  - component: {fileID: 7011254303309714756}
+  - component: {fileID: 7903094333226671785}
+  m_Layer: 7
   m_Name: EnemyBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,3 +84,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7011254303309714756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626468750894195493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3f7d792d3291e42b30e5d81aec7f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 3735553694237104251, guid: 5b8636d67c1e30e40bd6f628746cd38c, type: 3}
+  health: 3000
+  minShootingRate: 0.3
+  maxShootingRate: 5
+  laserSpeed: 3.5
+--- !u!60 &7903094333226671785
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626468750894195493}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.05, y: 1.6904129}
+    newSize: {x: 2.05, y: 1.6904129}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.64822227, y: 0.47074008}
+      - {x: 0.48568255, y: 0.5682639}
+      - {x: 0.33939683, y: 0.84458137}
+      - {x: 0.29063493, y: 0.8608353}
+      - {x: -0.22949207, y: 0.8608353}
+      - {x: -0.29450795, y: 0.79581946}
+      - {x: -0.27825397, y: 0.45448613}
+      - {x: -0.50580955, y: 0.5845179}
+      - {x: -0.65209526, y: 0.32445437}
+      - {x: -1.0096825, y: -0.098148815}
+      - {x: -1.0096825, y: -0.27694246}
+      - {x: -0.9934286, y: -0.30945042}
+      - {x: -0.5708254, y: -0.520752}
+      - {x: -0.37577778, y: -0.520752}
+      - {x: -0.32701588, y: -0.47199008}
+      - {x: -0.32701588, y: -0.39072025}
+      - {x: -0.32701588, y: -0.48824406}
+      - {x: -0.34326985, y: -0.504498}
+      - {x: -0.34326985, y: -0.5532599}
+      - {x: -0.29450795, y: -0.6507838}
+      - {x: -0.13196826, y: -0.7808155}
+      - {x: -0.050698414, y: -0.8295774}
+      - {x: 0.20936508, y: -0.8295774}
+      - {x: 0.64822227, y: -0.5695139}
+      - {x: 1.0383174, y: -0.27694246}
+      - {x: 1.0383174, y: -0.11440278}
