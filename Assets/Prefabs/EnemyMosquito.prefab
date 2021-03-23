@@ -115,6 +115,10 @@ MonoBehaviour:
   maxShootingRate: 3
   laserSpeed: 7
   explosionVFX: {fileID: 8705540985693937992, guid: b44774d137493794dbed54ba1009023f, type: 3}
+  laserSFX: {fileID: 8300000, guid: d18360950657d15498d9b59d20fa3e46, type: 3}
+  laserVolume: 0.05
+  dieSFX: {fileID: 8300000, guid: 7a49d1a94c518f241be82faf9435d6b4, type: 3}
+  dieVolume: 10
 --- !u!60 &8958854828719273248
 PolygonCollider2D:
   m_ObjectHideFlags: 0

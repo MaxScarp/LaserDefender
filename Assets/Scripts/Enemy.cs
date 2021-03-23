@@ -8,6 +8,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] float maxShootingRate = 3f;
     [SerializeField] float laserSpeed = 5f;
     [SerializeField] GameObject explosionVFX;
+    [SerializeField] AudioClip laserSFX;
+    [SerializeField] float laserVolume;
+    [SerializeField] AudioClip dieSFX;
+    [SerializeField] float dieVolume;
 
     float shotCounter;
 
@@ -35,6 +39,7 @@ public class Enemy : MonoBehaviour
     {
         GameObject laserClone = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
         laserClone.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -laserSpeed);
+        AudioSource.PlayClipAtPoint(laserSFX, Camera.main.transform.position, laserVolume);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -59,5 +64,6 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
         GameObject explosionVFXClone = Instantiate(explosionVFX, transform.position, Quaternion.identity) as GameObject;
         Destroy(explosionVFXClone, 0.25f);
+        AudioSource.PlayClipAtPoint(dieSFX, Camera.main.transform.position, dieVolume);
     }
 }

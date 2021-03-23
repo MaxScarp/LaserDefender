@@ -99,9 +99,14 @@ MonoBehaviour:
   moveSpeed: 7
   padding: 0.5
   health: 750
+  explosionVFX: {fileID: 8705540985693937992, guid: b44774d137493794dbed54ba1009023f, type: 3}
+  dieSFX: {fileID: 8300000, guid: 3fa2cf17559d78344a20355e4225f4d3, type: 3}
+  dieVolume: 0.8
   laserPrefab: {fileID: 8174962792388516257, guid: d6fbbc9a251d7e441b41bcb50978958f, type: 3}
   projectileSpeed: 10
   projectileFiringPeriod: 0.3
+  laserSFX: {fileID: 8300000, guid: 264612ce0bf387c4d8e1f14d1015eb73, type: 3}
+  laserVolume: 0.02
 --- !u!60 &5632514874855420968
 PolygonCollider2D:
   m_ObjectHideFlags: 0

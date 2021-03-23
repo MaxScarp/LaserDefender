@@ -165,3 +165,7 @@ MonoBehaviour:
   maxShootingRate: 5
   laserSpeed: 5
   explosionVFX: {fileID: 8705540985693937992, guid: b44774d137493794dbed54ba1009023f, type: 3}
+  laserSFX: {fileID: 8300000, guid: b069730c1aba4e344887b35853171efb, type: 3}
+  laserVolume: 0.15
+  dieSFX: {fileID: 8300000, guid: 7a49d1a94c518f241be82faf9435d6b4, type: 3}
+  dieVolume: 10
