@@ -30,6 +30,9 @@ public class SceneLoader : MonoBehaviour
     public void LoadGameScene()
     {
         SceneManager.LoadScene("Game");
+        GameSession gameSession = FindObjectOfType<GameSession>();
+        if(!gameSession) { return; }
+        gameSession.ResetGame();
     }
 
     public void LoadWinScene()

@@ -2,11 +2,17 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] Object laserPrefab;
+    [Header("Stats")]
     [SerializeField] int health = 300;
+    [SerializeField] int points = 100;
+
+    [Header("Shoot")]
+    [SerializeField] Object laserPrefab;
     [SerializeField] float minShootingRate = 0.3f;
     [SerializeField] float maxShootingRate = 3f;
     [SerializeField] float laserSpeed = 5f;
+
+    [Header("FXs")]
     [SerializeField] GameObject explosionVFX;
     [SerializeField] AudioClip laserSFX;
     [SerializeField] float laserVolume;
@@ -14,10 +20,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] float dieVolume;
 
     float shotCounter;
+    GameSession gameSession;
 
     private void Start()
     {
         shotCounter = Random.Range(minShootingRate, maxShootingRate);
+        gameSession = FindObjectOfType<GameSession>();
     }
 
     private void Update()
@@ -62,6 +70,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        gameSession.AddToScore(points);
         Destroy(gameObject);
         GameObject explosionVFXClone = Instantiate(explosionVFX, transform.position, Quaternion.identity) as GameObject;
         Destroy(explosionVFXClone, 0.25f);
