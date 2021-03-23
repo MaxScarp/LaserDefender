@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
         GameObject explosionVFXClone = Instantiate(explosionVFX, transform.position, transform.rotation) as GameObject;
         Destroy(explosionVFXClone, 0.25f);
         AudioSource.PlayClipAtPoint(dieSFX, Camera.main.transform.position, dieVolume);
+        FindObjectOfType<SceneLoader>().LoadGameOverScene();
     }
 
     private void Fire()
