@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 53920131}
   - component: {fileID: 53920130}
   m_Layer: 5
-  m_Name: Start Button Text
+  m_Name: Retry Button Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: START
+  m_text: RETRY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c1da5027e9fbe442855e526e6649443, type: 2}
   m_sharedMaterial: {fileID: 6538493433871720929, guid: 3c1da5027e9fbe442855e526e6649443, type: 2}
@@ -314,10 +314,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LASER DEFENDER
+  m_text: 'GAME OVER
 
 
-    SAVE THE EARTH!'
+    EARTH IS LOST!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c1da5027e9fbe442855e526e6649443, type: 2}
   m_sharedMaterial: {fileID: 6538493433871720929, guid: 3c1da5027e9fbe442855e526e6649443, type: 2}
@@ -402,9 +402,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 457049773, guid: b42235e335e855041b863a1ce9f629d0, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457049773, guid: b42235e335e855041b863a1ce9f629d0, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 457049773, guid: b42235e335e855041b863a1ce9f629d0, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 66ea464bcbe75ab419bc35a7e053fa2c, type: 3}
+      objectReference: {fileID: 8300000, guid: 58e768cef94bc4143a144975841a9e03, type: 3}
     - target: {fileID: 5432799177570034798, guid: b42235e335e855041b863a1ce9f629d0, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -886,7 +894,7 @@ GameObject:
   - component: {fileID: 1692271975}
   - component: {fileID: 1692271974}
   m_Layer: 5
-  m_Name: Start Button
+  m_Name: Retry Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
